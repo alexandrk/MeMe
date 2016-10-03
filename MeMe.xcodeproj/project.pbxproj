@@ -14,6 +14,8 @@
 		1159C2EE1DA065FF003B8F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1159C2EC1DA065FF003B8F8F /* LaunchScreen.storyboard */; };
 		1159C2F91DA065FF003B8F8F /* MeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C2F81DA065FF003B8F8F /* MeMeTests.swift */; };
 		1159C3041DA065FF003B8F8F /* MeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3031DA065FF003B8F8F /* MeMeUITests.swift */; };
+		1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */; };
+		1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1159C2FF1DA065FF003B8F8F /* MeMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1159C3031DA065FF003B8F8F /* MeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMeUITests.swift; sourceTree = "<group>"; };
 		1159C3051DA065FF003B8F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
+		1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				1159C2E31DA065FF003B8F8F /* AppDelegate.swift */,
 				1159C2E51DA065FF003B8F8F /* ViewController.swift */,
+				1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */,
 				1159C2E71DA065FF003B8F8F /* Main.storyboard */,
+				1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */,
 				1159C2EA1DA065FF003B8F8F /* Assets.xcassets */,
 				1159C2EC1DA065FF003B8F8F /* LaunchScreen.storyboard */,
 				1159C2EF1DA065FF003B8F8F /* Info.plist */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */,
 				1159C2E61DA065FF003B8F8F /* ViewController.swift in Sources */,
 				1159C2E41DA065FF003B8F8F /* AppDelegate.swift in Sources */,
+				1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
