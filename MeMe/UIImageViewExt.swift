@@ -19,9 +19,6 @@ extension UIImageView {
         
         let sx = frameWidth / imgWidth
         let sy = frameHeight / imgHeight
-        
-        //switch (self.contentMode) {
-        //case .scaleAspectFit:
             
         if imgWidth > imgHeight {
             return CGSize (width: frameWidth, height: sx * imgHeight)
@@ -29,9 +26,5 @@ extension UIImageView {
         else {
             return CGSize (width: sy * imgWidth, height: frameHeight)
         }
-        
-        //default:
-        //    return CGSize(width:s, height:s)
-        //}
     }
 }

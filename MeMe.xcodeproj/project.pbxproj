@@ -16,6 +16,7 @@
 		1159C3041DA065FF003B8F8F /* MeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3031DA065FF003B8F8F /* MeMeUITests.swift */; };
 		1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */; };
 		1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */; };
+		1159C3191DA48379003B8F8F /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3181DA48379003B8F8F /* ViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1159C3051DA065FF003B8F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
+		1159C3181DA48379003B8F8F /* ViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				1159C2E31DA065FF003B8F8F /* AppDelegate.swift */,
 				1159C2E51DA065FF003B8F8F /* ViewController.swift */,
+				1159C3181DA48379003B8F8F /* ViewControllerExt.swift */,
 				1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */,
 				1159C2E71DA065FF003B8F8F /* Main.storyboard */,
 				1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */,
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */,
+				1159C3191DA48379003B8F8F /* ViewControllerExt.swift in Sources */,
 				1159C2E61DA065FF003B8F8F /* ViewController.swift in Sources */,
 				1159C2E41DA065FF003B8F8F /* AppDelegate.swift in Sources */,
 				1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */,
@@ -425,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47Q8277ZWW;
 				INFOPLIST_FILE = MeMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dictality.MeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47Q8277ZWW;
 				INFOPLIST_FILE = MeMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dictality.MeMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
