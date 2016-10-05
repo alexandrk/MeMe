@@ -56,6 +56,16 @@
                                             <action selector="shareMeme:" destination="BYZ-38-t0r" id="BaL-zg-DSO"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="owT-GZ-Edj">
+                                        <connections>
+                                            <action selector="shareMeme:" destination="BYZ-38-t0r" id="QGf-ze-WUC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="cancel" id="eWA-FD-ajK">
+                                        <connections>
+                                            <action selector="resetAppState:" destination="BYZ-38-t0r" id="eb6-SR-hCa"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -84,6 +94,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="cameraButton" destination="Gy8-4l-e9l" id="FC8-bo-TLv"/>
+                        <outlet property="cancelButton" destination="eWA-FD-ajK" id="aaR-lk-yXK"/>
                         <outlet property="imageView" destination="ynY-ye-uQg" id="aaB-eA-5mv"/>
                         <outlet property="pickAnImage" destination="zAT-uZ-9Uf" id="9t9-LS-GVv"/>
                         <outlet property="shareButton" destination="Mcc-tt-v4Z" id="jmq-5U-fDM"/>

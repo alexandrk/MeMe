@@ -9,13 +9,19 @@
 import Foundation
 import UIKit
 
+struct TextFieldDefaults {
+    static let TOP_TEXT = "TOP"
+    static let BOTTOM_TEXT = "BOTTOM"
+}
+
 class TextFieldDelegate : NSObject, UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
-        textField.text = (textField.text == "TOP" || textField.text == "BOTTOM")
-                         ? ""
-                         : textField.text
+        textField.text = (textField.text == TextFieldDefaults.TOP_TEXT ||
+                          textField.text == TextFieldDefaults.BOTTOM_TEXT)
+                             ? ""
+                             : textField.text
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -39,6 +39,7 @@ class ViewController: UIViewController,
     @IBOutlet private weak var pickAnImage: UIBarButtonItem!
     @IBOutlet private weak var cameraButton: UIBarButtonItem!
     @IBOutlet private weak var shareButton: UIBarButtonItem!
+    @IBOutlet private weak var cancelButton: UIBarButtonItem!
     @IBOutlet private weak var textFieldTop: UITextField!
     @IBOutlet weak var textFieldBottom: UITextField!
     
@@ -204,6 +205,13 @@ class ViewController: UIViewController,
             viewController.completionWithItemsHandler = saveMeme
             present(viewController, animated: true)
         }
+    }
+    
+    @IBAction private func resetAppState(_ sender: AnyObject){
+        textFieldTop.text = TextFieldDefaults.TOP_TEXT
+        imageView.image = nil
+        textFieldBottom.text = TextFieldDefaults.BOTTOM_TEXT
+        
     }
     
     /**
