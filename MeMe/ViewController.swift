@@ -8,27 +8,6 @@
 
 import UIKit
 
-/*
- Meme struct - keeps all the info about the meme
-    - both text strings (top and bottom)
-    - original image
-    - meme image, with text strings applied to the image
- Note: currently not used
- */
-private struct Meme {
-    var textTop : String
-    var textBottom : String
-    var imageOriginal : UIImage
-    private var imageMemed : UIImage
-    
-    init(_ textTop: String, textBottom: String, imageOriginal: UIImage, imageMemed: UIImage){
-        self.textTop = textTop
-        self.textBottom = textBottom
-        self.imageOriginal = imageOriginal
-        self.imageMemed = imageMemed
-    }
-}
-
 class ViewController: UIViewController,
                     UIImagePickerControllerDelegate
 {
@@ -73,13 +52,8 @@ class ViewController: UIViewController,
         super.viewDidLoad()
         
         // Setup for both text fields
-        textFieldTop.delegate = textFieldDelegate
-        textFieldTop.defaultTextAttributes = memeTextAttributes
-        textFieldTop.textAlignment = .center
-        
-        textFieldBottom.delegate = textFieldDelegate
-        textFieldBottom.defaultTextAttributes = memeTextAttributes
-        textFieldBottom.textAlignment = .center
+        stylizeTextField(textField: textFieldTop)
+        stylizeTextField(textField: textFieldBottom)
     }
 
     // Used to hide top status bar (the one with network, time and battery life)
@@ -107,6 +81,16 @@ class ViewController: UIViewController,
         
         //Clean up
         unsubscribeFromKeyboardNotifications()
+    }
+    
+    /**
+     * Method: stylizeTextField
+     * Description: Used to setup both textfields with proper delegate and styling
+     */
+    private func stylizeTextField(textField: UITextField) {
+        textField.delegate = textFieldDelegate
+        textField.defaultTextAttributes = memeTextAttributes
+        textField.textAlignment = .center
     }
     
     /**
@@ -220,27 +204,23 @@ class ViewController: UIViewController,
      *              displays an alert, if the action notifing weather the action was success/failure
      */
     private func saveMeme(activity: UIActivityType?, completed: Bool, returnedItems: [Any]?, error: Error?){
-        let meme = Meme( textFieldTop.text!,
-                         textBottom: textFieldBottom.text!,
-                         imageOriginal: imageView.image!,
-                         imageMemed: generateMemedImage()!)
         
-        let viewController = UIAlertController()
+        let alertVC = UIAlertController()
         
         if (completed) {
-            viewController.title = ""
-            viewController.message = "Meme shared successfully!"
+            alertVC.title = ""
+            alertVC.message = "Meme shared successfully!"
         }
         else {
-            viewController.title = ""
-            viewController.message = "Failed to share the meme. Please try again!"
+            alertVC.title = ""
+            alertVC.message = "Failed to share the meme. Please try again!"
         }
         
-        viewController.addAction(UIAlertAction(title: "OK", style: .default){
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default){
             action in self.dismiss(animated: true, completion: nil)
         })
         
-        present(viewController, animated: true)
+        present(alertVC, animated: true)
         
     }
     

@@ -17,6 +17,7 @@
 		1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */; };
 		1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */; };
 		1159C3191DA48379003B8F8F /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3181DA48379003B8F8F /* ViewControllerExt.swift */; };
+		1162890F1DC7BC0F00A468AA /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162890E1DC7BC0F00A468AA /* Meme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		1159C3181DA48379003B8F8F /* ViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		1162890E1DC7BC0F00A468AA /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				1159C2E31DA065FF003B8F8F /* AppDelegate.swift */,
 				1159C2E51DA065FF003B8F8F /* ViewController.swift */,
+				1162890E1DC7BC0F00A468AA /* Meme.swift */,
 				1159C3181DA48379003B8F8F /* ViewControllerExt.swift */,
 				1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */,
 				1159C2E71DA065FF003B8F8F /* Main.storyboard */,
@@ -274,6 +277,7 @@
 				1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */,
 				1159C3191DA48379003B8F8F /* ViewControllerExt.swift in Sources */,
 				1159C2E61DA065FF003B8F8F /* ViewController.swift in Sources */,
+				1162890F1DC7BC0F00A468AA /* Meme.swift in Sources */,
 				1159C2E41DA065FF003B8F8F /* AppDelegate.swift in Sources */,
 				1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */,
 			);
@@ -528,6 +532,7 @@
 				1159C30A1DA065FF003B8F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1159C30B1DA065FF003B8F8F /* Build configuration list for PBXNativeTarget "MeMeTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +541,7 @@
 				1159C30D1DA065FF003B8F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1159C30E1DA065FF003B8F8F /* Build configuration list for PBXNativeTarget "MeMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				1159C3101DA065FF003B8F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
