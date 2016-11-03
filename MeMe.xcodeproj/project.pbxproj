@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11029F571DCBAE690076996A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11029F561DCBAE690076996A /* MyTableViewCell.swift */; };
 		1159C2E41DA065FF003B8F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C2E31DA065FF003B8F8F /* AppDelegate.swift */; };
 		1159C2E61DA065FF003B8F8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C2E51DA065FF003B8F8F /* ViewController.swift */; };
 		1159C2E91DA065FF003B8F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1159C2E71DA065FF003B8F8F /* Main.storyboard */; };
@@ -18,6 +19,10 @@
 		1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */; };
 		1159C3191DA48379003B8F8F /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3181DA48379003B8F8F /* ViewControllerExt.swift */; };
 		1162890F1DC7BC0F00A468AA /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162890E1DC7BC0F00A468AA /* Meme.swift */; };
+		116289111DC7D13900A468AA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116289101DC7D13900A468AA /* TableViewController.swift */; };
+		116289131DC7E57E00A468AA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116289121DC7E57E00A468AA /* CollectionViewController.swift */; };
+		116289151DC7E58E00A468AA /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116289141DC7E58E00A468AA /* MyCollectionViewCell.swift */; };
+		11A977441DCBB35D007D434D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A977431DCBB35D007D434D /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11029F561DCBAE690076996A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		1159C2E01DA065FF003B8F8F /* MeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1159C2E31DA065FF003B8F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1159C2E51DA065FF003B8F8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,10 @@
 		1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		1159C3181DA48379003B8F8F /* ViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
 		1162890E1DC7BC0F00A468AA /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		116289101DC7D13900A468AA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		116289121DC7E57E00A468AA /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		116289141DC7E58E00A468AA /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		11A977431DCBB35D007D434D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,11 @@
 				1159C3181DA48379003B8F8F /* ViewControllerExt.swift */,
 				1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */,
 				1159C2E71DA065FF003B8F8F /* Main.storyboard */,
+				11A977431DCBB35D007D434D /* DetailsViewController.swift */,
+				116289121DC7E57E00A468AA /* CollectionViewController.swift */,
+				116289141DC7E58E00A468AA /* MyCollectionViewCell.swift */,
+				116289101DC7D13900A468AA /* TableViewController.swift */,
+				11029F561DCBAE690076996A /* MyTableViewCell.swift */,
 				1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */,
 				1159C2EA1DA065FF003B8F8F /* Assets.xcassets */,
 				1159C2EC1DA065FF003B8F8F /* LaunchScreen.storyboard */,
@@ -275,8 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */,
+				116289111DC7D13900A468AA /* TableViewController.swift in Sources */,
+				116289151DC7E58E00A468AA /* MyCollectionViewCell.swift in Sources */,
+				11A977441DCBB35D007D434D /* DetailsViewController.swift in Sources */,
+				11029F571DCBAE690076996A /* MyTableViewCell.swift in Sources */,
 				1159C3191DA48379003B8F8F /* ViewControllerExt.swift in Sources */,
 				1159C2E61DA065FF003B8F8F /* ViewController.swift in Sources */,
+				116289131DC7E57E00A468AA /* CollectionViewController.swift in Sources */,
 				1162890F1DC7BC0F00A468AA /* Meme.swift in Sources */,
 				1159C2E41DA065FF003B8F8F /* AppDelegate.swift in Sources */,
 				1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */,

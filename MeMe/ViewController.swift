@@ -192,9 +192,12 @@ class ViewController: UIViewController,
     }
     
     @IBAction private func resetAppState(_ sender: AnyObject){
-        textFieldTop.text = TextFieldDefaults.TOP_TEXT
-        imageView.image = nil
-        textFieldBottom.text = TextFieldDefaults.BOTTOM_TEXT
+        dismiss(animated: true, completion: nil)
+        /*
+            textFieldTop.text = TextFieldDefaults.TOP_TEXT
+            imageView.image = nil
+            textFieldBottom.text = TextFieldDefaults.BOTTOM_TEXT
+        */
         
     }
     
@@ -208,6 +211,18 @@ class ViewController: UIViewController,
         let alertVC = UIAlertController()
         
         if (completed) {
+            
+            // Save the Meme within the app structure, if completed is TRUE
+            let meme = Meme( textTop:       textFieldTop.text!,
+                             textBottom:    textFieldBottom.text!,
+                             imageOriginal: imageView.image!,
+                             imageMemed:    generateMemedImage()!)
+            
+            // Add it to the memes array in the Application Delegate
+            let object = UIApplication.shared.delegate
+            let appDelegate = object as! AppDelegate
+            appDelegate.memes.append(meme)
+            
             alertVC.title = ""
             alertVC.message = "Meme shared successfully!"
         }
