@@ -22,29 +22,32 @@ class CollectionViewController: UICollectionViewController {
 
     private func calculateCellSizeAndUpdateFlowLayout(_ screenWidth: CGFloat){
         
-        let margin: CGFloat = 10.0
-        let cellsPerRow: CGFloat = 3.0
-        let size = (screenWidth - margin * (cellsPerRow + 2)) / cellsPerRow
-        
-        flowLayout.minimumInteritemSpacing = margin
-        flowLayout.minimumLineSpacing = margin
-        flowLayout.itemSize = CGSize(width: size, height: size)
-        
-        print("bounds width: \(screenWidth)")
-        print("bounds cell size: \(size)")
+        if flowLayout != nil {
+            let margin: CGFloat = 10.0
+            let cellsPerRow: CGFloat = 3.0
+            let size = (screenWidth - margin * (cellsPerRow + 2)) / cellsPerRow
+            
+            flowLayout.minimumInteritemSpacing = margin
+            flowLayout.minimumLineSpacing = margin
+            flowLayout.itemSize = CGSize(width: size, height: size)
+        }
         
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        print("bounds IN viewWillTransition")
-        super.viewWillTransition(to: size, with: coordinator)
-        
-        calculateCellSizeAndUpdateFlowLayout(size.width)
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator)
+    {
+        // Checking if the viewController is loaded and attached to the window (is displayed)
+        // Prevents the code to be executed on screen rotation, if this viewControler is not on screen
+        if (self.isViewLoaded && self.view.window != nil){
+            print("in CollectionViewController's viewWillTransition")
+            super.viewWillTransition(to: size, with: coordinator)
+            
+            calculateCellSizeAndUpdateFlowLayout(size.width)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("Collection View viewDidAppear")
         collectionView?.reloadData()
         calculateCellSizeAndUpdateFlowLayout(self.view.bounds.width)
     }

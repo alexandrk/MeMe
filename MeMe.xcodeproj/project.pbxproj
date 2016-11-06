@@ -16,7 +16,6 @@
 		1159C2F91DA065FF003B8F8F /* MeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C2F81DA065FF003B8F8F /* MeMeTests.swift */; };
 		1159C3041DA065FF003B8F8F /* MeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3031DA065FF003B8F8F /* MeMeUITests.swift */; };
 		1159C3151DA0AAFC003B8F8F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */; };
-		1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */; };
 		1159C3191DA48379003B8F8F /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159C3181DA48379003B8F8F /* ViewControllerExt.swift */; };
 		1162890F1DC7BC0F00A468AA /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162890E1DC7BC0F00A468AA /* Meme.swift */; };
 		116289111DC7D13900A468AA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116289101DC7D13900A468AA /* TableViewController.swift */; };
@@ -58,7 +57,6 @@
 		1159C3031DA065FF003B8F8F /* MeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeMeUITests.swift; sourceTree = "<group>"; };
 		1159C3051DA065FF003B8F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1159C3141DA0AAFC003B8F8F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
-		1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
 		1159C3181DA48379003B8F8F /* ViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
 		1162890E1DC7BC0F00A468AA /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		116289101DC7D13900A468AA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				1159C2E51DA065FF003B8F8F /* ViewController.swift */,
 				1162890E1DC7BC0F00A468AA /* Meme.swift */,
 				1159C3181DA48379003B8F8F /* ViewControllerExt.swift */,
-				1159C3161DA1ACC7003B8F8F /* UIImageViewExt.swift */,
 				1159C2E71DA065FF003B8F8F /* Main.storyboard */,
 				11A977431DCBB35D007D434D /* DetailsViewController.swift */,
 				116289121DC7E57E00A468AA /* CollectionViewController.swift */,
@@ -289,7 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1159C3171DA1ACC7003B8F8F /* UIImageViewExt.swift in Sources */,
 				116289111DC7D13900A468AA /* TableViewController.swift in Sources */,
 				116289151DC7E58E00A468AA /* MyCollectionViewCell.swift in Sources */,
 				11A977441DCBB35D007D434D /* DetailsViewController.swift in Sources */,

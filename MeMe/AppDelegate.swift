@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Loads a set of test data
+        //loadTestData()
+        
         return true
     }
 
@@ -42,6 +46,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    private func loadTestData(){
+        memes.append(Meme(textTop: "Top Text For Image 1",
+                          textBottom: "Bottom Text For Image 1",
+                          imageOriginal: #imageLiteral(resourceName: "image 1"), imageMemed: #imageLiteral(resourceName: "image 1")))
+        memes.append(Meme(textTop: "Top Text For Image 2",
+                          textBottom: "Bottom Text For Image 2",
+                          imageOriginal: #imageLiteral(resourceName: "image 2"), imageMemed: #imageLiteral(resourceName: "image 2")))
+        memes.append(Meme(textTop: "Top Text For Image 3",
+                          textBottom: "Bottom Text For Image 3",
+                          imageOriginal: #imageLiteral(resourceName: "image 3"), imageMemed: #imageLiteral(resourceName: "image 3")))
+        memes.append(Meme(textTop: "Top Text For Image 4",
+                          textBottom: "Bottom Text For Image 4",
+                          imageOriginal: #imageLiteral(resourceName: "image 4"), imageMemed: #imageLiteral(resourceName: "image 4")))
+        memes.append(Meme(textTop: "Top Text For Image 5",
+                          textBottom: "Bottom Text For Image 5",
+                          imageOriginal: #imageLiteral(resourceName: "image 5"), imageMemed: #imageLiteral(resourceName: "image 5")))
+        memes.append(Meme(textTop: "Top Text For Image 6",
+                          textBottom: "Bottom Text For Image 6",
+                          imageOriginal: #imageLiteral(resourceName: "image 6"), imageMemed: #imageLiteral(resourceName: "image 6")))
+        memes.append(Meme(textTop: "Top Text For Image 7",
+                          textBottom: "Bottom Text For Image 7",
+                          imageOriginal: #imageLiteral(resourceName: "image 7"), imageMemed: #imageLiteral(resourceName: "image 7")))
+        memes.append(Meme(textTop: "Top Text For Image 8",
+                          textBottom: "Bottom Text For Image 8",
+                          imageOriginal: #imageLiteral(resourceName: "image 8"), imageMemed: #imageLiteral(resourceName: "image 8")))
+        memes.append(Meme(textTop: "Top Text For Image 9",
+                          textBottom: "Bottom Text For Image 9",
+                          imageOriginal: #imageLiteral(resourceName: "image 9"), imageMemed: #imageLiteral(resourceName: "image 9")))
+        memes.append(Meme(textTop: "Top Text For Image 10",
+                          textBottom: "Bottom Text For Image 10",
+                          imageOriginal: #imageLiteral(resourceName: "image 10"), imageMemed: #imageLiteral(resourceName: "image 10")))
+        memes.append(Meme(textTop: "Top Text For Image 11",
+                          textBottom: "Bottom Text For Image 11",
+                          imageOriginal: #imageLiteral(resourceName: "image 11"), imageMemed: #imageLiteral(resourceName: "image 11")))
+    }
 
 }
 
